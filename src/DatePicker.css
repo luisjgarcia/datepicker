@@ -1,0 +1,21 @@
+.datePicker {
+  position: absolute;
+  top: 35px;
+  left: 25%;
+  width: 100vw;
+}
+
+.datePicker > button {
+  position: absolute;
+  left: 0;
+  top: 350px;
+  text-transform: inherit !important;
+  background-color: #ff7779 !important;
+  color: white !important;
+  width: 579px;
+}
+
+.datePicker > button:hover {
+  background-color: #ff7779b9 !important;
+  color: white !important;
+}

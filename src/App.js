@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import { Button } from 'semantic-ui-react'
+import DatePicker from './DatePicker';
 
 function App() {
+  const [showSearch, setShowSearch ] = useState(true);
+  const handleOnSeach = (startDate, endDate) =>{
+    console.log("Start Date", startDate);
+    console.log("End Date", endDate);
+
+    setShowSearch(!showSearch);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="banner__search">  
+     <Button  className="banner__searchButton" onClick={ () => setShowSearch(!showSearch)} >{showSearch? "Hide": "Search Dates"} </Button>  
+        {showSearch && <DatePicker handleOnSeach={handleOnSeach}/>}
     </div>
   );
 }
