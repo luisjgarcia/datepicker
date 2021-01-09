@@ -1,0 +1,53 @@
+.container__table {
+  overflow-x: scroll !important;
+}
+
+.ui.grid > [class*='one column'].row > .column {
+  width: 99% !important;
+}
+
+.ui.button,
+.ui.button:focus {
+  background-color: var(--primary-teal);
+  color: var(--primary-blue);
+}
+
+.ui.button:hover,
+.ui.button:active {
+  background-color: var(--dark-teal) !important;
+  color: var(--white) !important;
+  box-shadow: 0 0.1rem 0.1rem 0.05rem #cfcfcf;
+}
+
+li {
+  display: list-item;
+  font-size: 15px;
+  transform: translateX(-18px);
+  text-align: left;
+}
+
+.ui.yellow.button:hover {
+  background-color: #fbbd00 !important;
+  color: #1a1446 !important;
+  text-shadow: none;
+  background-image: none;
+}
+
+.ui.yellow.button {
+  background-color: #ffd008 !important;
+  color: #1a1446 !important;
+  text-shadow: none;
+  background-image: none;
+}
+
+.ui.selection.dropdown{
+  width: 150px !important
+}
+
+.ui.compact.selection.dropdown{
+  width: 80px !important
+}
+
+input[type="Licensed_Under"]{
+  width: 100px !important
+}
