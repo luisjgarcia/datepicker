@@ -1,8 +1,8 @@
-import React from "react";
-import { demoData } from "./DemoData";
-import ManualInstallsTable from "./ManualInstallsTable";
-import SubNav from "../common/SubNav/SubNav.jsx";
-import "./ManualInstalls.css";
+import React from 'react';
+import { demoData } from './DemoData';
+import ManualInstallsTable from './ManualInstallsTable';
+// import SubNav from '../common/SubNav/SubNav.jsx';
+// import './ManualInstalls.css';
 
 class ManualInstalls extends React.Component {
   constructor(props) {
@@ -24,7 +24,7 @@ class ManualInstalls extends React.Component {
   render() {
     return (
       <div>
-        <SubNav active="Manual Installs" />
+        {/* <SubNav active='Manual Installs' /> */}
         <ManualInstallsTable
           data={this.state.data}
           dataUpdate={this.dataUpdate}

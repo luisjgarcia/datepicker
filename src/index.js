@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+// import App from './App';
 import reportWebVitals from './reportWebVitals';
+import ManualInstalls from './ResponsiveTable/ManualInstalls';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ManualInstalls />
   </React.StrictMode>,
   document.getElementById('root')
 );
